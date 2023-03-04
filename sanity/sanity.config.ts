@@ -3,12 +3,17 @@ import { deskTool } from "sanity/desk";
 import { visionTool } from "@sanity/vision";
 import { schemaTypes } from "../sanity/schemas";
 
-export default defineConfig({
-  name: "default",
-  title: "next-sanity-boilerplate",
+// ENVIRONMENT VARIABLES
+const projectId = process.env.NEXT_PUBLIC_SANITY_PROJECT_ID as string;
+const dataset = process.env.NEXT_PUBLIC_SANITY_DATASET as string;
 
-  projectId: "u4kb8g2o",
-  dataset: "production",
+export default defineConfig({
+  basePath: "/studio",
+  name: "NEXT_SANITY_STUDIO",
+  title: "NEXT SANITY STUDIO",
+
+  projectId,
+  dataset,
 
   plugins: [deskTool(), visionTool()],
 
