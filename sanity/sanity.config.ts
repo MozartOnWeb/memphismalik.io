@@ -3,6 +3,7 @@ import { deskTool } from "sanity/desk";
 import { visionTool } from "@sanity/vision";
 import { schemaTypes } from "../sanity/schemas";
 import { sanityTheme } from "./theme";
+import StudioNavbar from "@/components/studio/StudioNavbar";
 
 // ENVIRONMENT VARIABLES
 const projectId = process.env.NEXT_PUBLIC_SANITY_PROJECT_ID as string;
@@ -20,6 +21,11 @@ export default defineConfig({
 
   schema: {
     types: schemaTypes,
+  },
+  studio: {
+    components: {
+      navbar: StudioNavbar,
+    },
   },
   theme: sanityTheme,
 });
