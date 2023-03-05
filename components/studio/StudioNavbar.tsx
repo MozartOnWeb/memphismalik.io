@@ -6,7 +6,7 @@ import { ArrowUturnLeft } from "@/public/assets/icons";
 export default function StudioNavbar(props: any) {
   return (
     <div>
-      <div>
+      <div className="goToWebsiteContainer">
         <Link href={"/"}>
           <ArrowUturnLeft />
           Go To Website

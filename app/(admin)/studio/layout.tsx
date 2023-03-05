@@ -1,3 +1,5 @@
+import "../../../components/studio/studio.styles.scss";
+
 export default function RootLayout({
   children,
 }: {

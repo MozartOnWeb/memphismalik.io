@@ -4,6 +4,7 @@ import { visionTool } from "@sanity/vision";
 import { schemaTypes } from "../sanity/schemas";
 import { sanityTheme } from "./theme";
 import StudioNavbar from "@/components/studio/StudioNavbar";
+import StudioLogo from "@/components/studio/StudioLogo";
 
 // ENVIRONMENT VARIABLES
 const projectId = process.env.NEXT_PUBLIC_SANITY_PROJECT_ID as string;
@@ -25,6 +26,7 @@ export default defineConfig({
   studio: {
     components: {
       navbar: StudioNavbar,
+      logo: StudioLogo,
     },
   },
   theme: sanityTheme,
