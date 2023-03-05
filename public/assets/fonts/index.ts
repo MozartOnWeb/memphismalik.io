@@ -41,3 +41,18 @@ export const Roboto_Mono = localFont({
   ],
   variable: "--robotoMono",
 });
+
+export const Satoshi = localFont({
+  src: [
+    {
+      path: "./Satoshi/Satoshi-Light.woff",
+      weight: "300",
+      style: "normal",
+    },
+    {
+      path: "./Satoshi/Satoshi-Regular.woff",
+      weight: "400",
+      style: "normal",
+    },
+  ],
+});

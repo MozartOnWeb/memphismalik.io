@@ -1,5 +1,13 @@
 {
   "typescript.tsdk": "node_modules/typescript/lib",
   "typescript.enablePromptUseWorkspaceTsdk": true,
-  "cSpell.words": ["Mechanica", "neue", "Neue", "roboto", "Roboto", "Ultrabold"]
+  "cSpell.words": [
+    "Mandjou",
+    "Mechanica",
+    "neue",
+    "Neue",
+    "roboto",
+    "Roboto",
+    "Ultrabold"
+  ]
 }
