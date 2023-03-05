@@ -1,10 +1,4 @@
-"use client";
-
-//import styled components
-import {
-  GoToWebsiteLink,
-  GoToWebsiteContainer,
-} from "@/styles/studio/StudioNavbar.styled";
+import Link from "next/link";
 
 //import icons
 import { ArrowUturnLeft } from "@/public/assets/icons";
@@ -12,12 +6,12 @@ import { ArrowUturnLeft } from "@/public/assets/icons";
 export default function StudioNavbar(props: any) {
   return (
     <div>
-      <GoToWebsiteContainer>
-        <GoToWebsiteLink href={"/"}>
+      <div>
+        <Link href={"/"}>
           <ArrowUturnLeft />
           Go To Website
-        </GoToWebsiteLink>
-      </GoToWebsiteContainer>
+        </Link>
+      </div>
       {props.renderDefault(props)}
     </div>
   );
