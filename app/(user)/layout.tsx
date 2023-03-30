@@ -1,5 +1,7 @@
 import "../../sass/index.scss";
 
+import StyledComponentsRegistry from "../../lib/registry";
+
 //import fonts
 import { Neue_Mechanica, Roboto_Mono } from "@/public/assets/fonts";
 
@@ -37,7 +39,7 @@ export default function RootLayout({
   return (
     <html lang="fr">
       <body className={`${Neue_Mechanica.variable} ${Roboto_Mono.variable}`}>
-        {children}
+        <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
       </body>
     </html>
   );
