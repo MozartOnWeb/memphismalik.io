@@ -1,4 +1,4 @@
-import { CustomH1 } from "@/components/custom/Buttons";
+import { CustomH1 } from "@/components/buttons/Buttons";
 
 export default function Home() {
   return (
