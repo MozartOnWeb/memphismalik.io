@@ -3,7 +3,10 @@
 import styled from "styled-components";
 
 export const CustomH1 = styled.h1`
-  color: red;
+  color: var(--sui-colors-violet);
   font-family: var(--neueMechanica);
-  margin-top: 20em;
+
+  @media (max-width: var(--sui-breakpoints-tablet)) {
+    color: var(--sui-colors-red);
+  }
 `;

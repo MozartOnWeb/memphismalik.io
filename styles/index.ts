@@ -125,4 +125,8 @@ export const GlobalStyle = createGlobalStyle`
   --sui-shadows-floating-hover: 
   0px 2px 4px 0px rgba(34, 36, 38, 0.15),
   0px 2px 10px 0px rgba(34, 36, 38, 0.25);
-}`;
+
+  
+}
+
+`;
