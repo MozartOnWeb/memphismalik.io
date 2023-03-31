@@ -1,118 +1,56 @@
-:root {
-  /* Animations */
+$sui-spacing-1: 0;
+$sui-spacing-2: 4;
+$sui-spacing-3: 8;
+$sui-spacing-4: 16;
+$sui-spacing-5: 32;
+$sui-spacing-6: 64;
+$sui-spacing-7: 128;
+$sui-spacing-8: 256;
+$sui-spacing-9: 512;
+$sui-sizes-mini: 11 / 14;
+$sui-sizes-tiny: 12 / 14;
+$sui-sizes-small: 13 / 14;
+$sui-sizes-medium: 14 / 14;
+$sui-sizes-large: 16 / 14;
+$sui-sizes-big: 18 / 14;
+$sui-sizes-huge: 20 / 14;
+$sui-sizes-massive: 24 / 14;
 
-  /* sizes */
-  --sui-spacing-1: 0;
-  --sui-spacing-2: 4;
-  --sui-spacing-3: 8;
-  --sui-spacing-4: 16;
-  --sui-spacing-5: 32;
-  --sui-spacing-6: 64;
-  --sui-spacing-7: 128;
-  --sui-spacing-8: 256;
-  --sui-spacing-9: 512;
-  --sui-sizes-mini: 11 / 14;
-  --sui-sizes-tiny: 12 / 14;
-  --sui-sizes-small: 13 / 14;
-  --sui-sizes-medium: 14 / 14;
-  --sui-sizes-large: 16 / 14;
-  --sui-sizes-big: 18 / 14;
-  --sui-sizes-huge: 20 / 14;
-  --sui-sizes-massive: 24 / 14;
+/* Fonts */
+$sui-fonts-body: var(--neueMechanica);
+$sui-fonts-heading: var(--neueMechanica);
+$sui-fonts-monospace: var(--neueMechanica);
 
-  /* Fonts */
-  --sui-fonts-body: Roboto, Helvetiva Neue, Helvetica, Aria, sans-serif;
-  --sui-fonts-heading: Poppins, Helvetiva Neue, Helvetica, Aria, sans-serif;
-  --sui-fonts-monospace: Fira Code, Menlo, monospace;
+/* Fonts: Weight */
+$sui-fonts-weights-body: 400;
+$sui-fonts-weights-heading: 500;
+$sui-fonts-weights-bold: 700;
 
-  /* Fonts: Weight */
-  --sui-fonts-weights-body: 400;
-  --sui-fonts-weights-heading: 500;
-  --sui-fonts-weights-bold: 700;
+/* Fonts: Line Height */
+$sui-fonts-line-body: 1.5;
+$sui-fonts-line-heading: 1.25;
 
-  /* Fonts: Line Height */
-  --sui-fonts-line-body: 1.5;
-  --sui-fonts-line-heading: 1.25;
+/* Breakpoints */
+$sui-breakpoints-mobile: 320px;
+$sui-breakpoints-tablet: 768px;
+$sui-breakpoints-computer: 992px;
+$sui-breakpoints-desktop: 1200px;
+$sui-breakpoints-widescreen: 1920px;
 
-  /* Breakpoints */
-  --sui-breakpoints-mobile: 320px;
-  --sui-breakpoints-tablet: 768px;
-  --sui-breakpoints-computer: 992px;
-  --sui-breakpoints-desktop: 1200px;
-  --sui-breakpoints-widescreen: 1920px;
+/* Colors */
+$sui-colors-white: #efefef;
+$sui-colors-gray: #919191;
+$sui-colors-primary: #9381ff;
 
-  /* Colors */
-  --sui-colors-white: #fefefe;
-  --sui-colors-black: #010101;
-  --sui-colors-red: #db2828;
-  --sui-colors-orange: #f2711c;
-  --sui-colors-yellow: #fbbd08;
-  --sui-colors-olive: #b5cc18;
-  --sui-colors-green: #21ba45;
-  --sui-colors-teal: #00b5ad;
-  --sui-colors-blue: #2185d0;
-  --sui-colors-violet: #6435c9;
-  --sui-colors-purple: #a333c8;
-  --sui-colors-pink: #e03997;
-  --sui-colors-brown: #a5673f;
-  --sui-colors-grey: #767676;
+/* Background */
+$sui-colors-background: #050505;
+$sui-colors-sidebar: #171717;
 
-  --sui-colors-primary: blue;
-  --sui-colors-text: #111212;
-  --sui-colors-background: #fff;
-  --sui-colors-secondary: #6d59f0;
-  --sui-colors-muted: #f6f6f9;
-  --sui-colors-gray: #d3d7da;
-  --sui-colors-highlight: hsla(205, 100%, 40%, 0.125);
-  --sui-colors-disabled: rgba(40, 40, 40, 0.3);
-  --sui-colors-disabled-inverted: rgba(225, 225, 225, 0.3);
+/* Borders */
+$sui-colors-sidebar-border: #262626;
 
-  /* Colors: States */
-  --sui-colors-positive-color: green;
-  --sui-colors-positive-bg: #fff6f6;
-  --sui-colors-positive-border: #a3c293;
-  --sui-colors-positive-header: #1a531b;
-  --sui-colors-positive-text: #2c662d;
+/* Hover */
+$sui-colors-hover: #404040;
 
-  --sui-colors-negative-color: red;
-  --sui-colors-negative-bg: #fff6f6;
-  --sui-colors-negative-border: #e0b4b4;
-  --sui-colors-negative-header: #912d2b;
-  --sui-colors-negative-text: #9f3a38;
-
-  --sui-colors-info-color: #31ccec;
-  --sui-colors-info-bg: #f8ffff;
-  --sui-colors-info-border: #a9d5de;
-  --sui-colors-info-header: #0e566c;
-  --sui-colors-info-text: #276f86;
-
-  --sui-colors-warning-color: #f2c037;
-  --sui-colors-warning-bg: #c9ba9b;
-  --sui-colors-warning-border: #fffaf3;
-  --sui-colors-warning-header: #794b02;
-  --sui-colors-warning-text: #573a08;
-
-  --sui-colors-brands-facebook: #3b5998;
-  --sui-colors-brands-twitter: #55acee;
-  --sui-colors-brands-googleplus: #dd4b39;
-  --sui-colors-brands-linkedin: #1f88be;
-  --sui-colors-brands-youtube: #ff0000;
-  --sui-colors-brands-pinterest: #bd081c;
-  --sui-colors-brands-instagram: #49769c;
-
-  /* Borders */
-  --sui-borders-radius: 0;
-  --sui-borders-color: rgba(34, 36, 38, 0.15);
-  --sui-borders-strong: rgba(34, 36, 38, 0.22);
-  --sui-borders-internal: rgba(34, 36, 38, 0.1);
-  --sui-borders-selected: rgba(34, 36, 38, 0.35);
-  --sui-borders-selected-strong: rgba(34, 36, 38, 0.5);
-  --sui-borders-disabled: rgba(34, 36, 38, 0.5);
-
-  /* Shadows */
-  --sui-shadows-subtle: 0px 1px 2px 0 var(--sui-borders-color);
-  --sui-shadows-floating: 0px 2px 4px 0px rgba(34, 36, 38, 0.12),
-    0px 2px 10px 0px rgba(34, 36, 38, 0.15);
-  --sui-shadows-floating-hover: 0px 2px 4px 0px rgba(34, 36, 38, 0.15),
-    0px 2px 10px 0px rgba(34, 36, 38, 0.25);
-}
+/* Cta */
+$sui-button-primary: #262626;
