@@ -1,3 +1,6 @@
+//import styles
+import "../../sass/index.scss";
+
 //import fonts
 import { Neue_Mechanica, Roboto_Mono } from "@/public/assets/fonts";
 
