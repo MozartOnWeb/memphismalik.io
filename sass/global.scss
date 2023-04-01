@@ -8,9 +8,15 @@ body {
   margin: 0;
   padding: 0;
   height: 100vh;
-  overflow: hidden;
+  background-color: $sui-colors-background;
+  color: $sui-colors-white;
 }
 
 .container {
   display: flex;
+}
+
+.home-page {
+  width: 50em;
+  margin: 10em auto;
 }
