@@ -41,7 +41,7 @@ export default function RootLayout({
   return (
     <html lang="fr">
       <body
-        className={`${Neue_Mechanica.variable} ${Roboto_Mono.variable} container`}
+        className={`${Neue_Mechanica.variable} ${Roboto_Mono.variable} main-layout`}
       >
         <Sidebar />
         {children}

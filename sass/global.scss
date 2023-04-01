@@ -1,22 +1,17 @@
 html {
   font-size: 61.2%;
   box-sizing: border-box;
-  overflow-x: hidden;
 }
 
 body {
   margin: 0;
   padding: 0;
-  height: 100vh;
+  min-height: 100vh;
   background-color: $sui-colors-background;
   color: $sui-colors-white;
 }
 
-.container {
+.main-layout {
   display: flex;
-}
-
-.home-page {
-  width: 50em;
-  margin: 10em auto;
+  overflow-y: hidden;
 }

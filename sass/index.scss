@@ -7,5 +7,8 @@
 /* Import global styles */
 @import "./global.scss";
 
+/* Import pages styles */
+@import "../app/(user)/home.scss";
+
 /* Import components styles */
 @import "../components/sidebar/sidebar.scss";
