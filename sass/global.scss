@@ -12,6 +12,6 @@ body {
 }
 
 .main-layout {
-  display: flex;
-  overflow-y: hidden;
+  display: grid;
+  min-height: 100vh;
 }

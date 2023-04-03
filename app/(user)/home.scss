@@ -1,4 +1,23 @@
 .home-page {
-  width: 50em;
+  width: 100%;
   margin: 0 auto;
+
+  .home-header {
+    height: 5em;
+    border-bottom: 1px solid $sui-colors-sidebar-border;
+    position: fixed;
+    width: 100%;
+  }
+
+  .home-main {
+    width: 70em;
+    margin: 10em auto;
+
+    h1 {
+      font-size: 2em;
+      font-weight: 300;
+      margin-bottom: 0.5em;
+      font-family: $sui-fonts-body;
+    }
+  }
 }

@@ -3,4 +3,7 @@
   height: 100vh;
   position: sticky;
   width: 25rem;
+  border-right: 1px solid $sui-colors-sidebar-border;
+  position: fixed;
+  z-index: 2;
 }
