@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 import { NavLink } from "../navlinks/NavLinks";
 
 export default function Sidebar() {
@@ -8,7 +6,8 @@ export default function Sidebar() {
       <h1>Memphis Malik</h1>
 
       <div className="head_links">
-        <NavLink />
+        <NavLink href="/" name="Home" />
+        <NavLink href="/writings" name="Writings" />
       </div>
     </div>
   );

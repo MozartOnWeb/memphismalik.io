@@ -9,6 +9,7 @@ type NavLinkProps = {
   href?: string;
   name?: string;
   icon?: JSX.Element;
+  className?: any;
 };
 
 export const NavLink = ({ href, name, icon }: NavLinkProps) => {
@@ -16,7 +17,7 @@ export const NavLink = ({ href, name, icon }: NavLinkProps) => {
 
   return (
     <Link
-      className={pathname === href || "/" ? "nav_link active" : "nav_link"}
+      className={"nav_link " + (pathname === href ? " active" : "")}
       href={href || "/"}
     >
       <HomeIcon />
