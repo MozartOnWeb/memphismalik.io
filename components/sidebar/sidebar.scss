@@ -1,2 +1,8 @@
 .sidebar {
+  background-color: $sui-colors-sidebar;
+  border-right: 1px solid $sui-colors-sidebar-border;
+  height: 100%;
+  position: fixed;
+  width: 250px;
+  padding: $sui-spacing-4;
 }
