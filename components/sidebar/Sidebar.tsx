@@ -3,7 +3,10 @@ import { NavLink } from "../navlinks/NavLinks";
 import {
   AMAIcon,
   BookmarksIcon,
+  GithubIcon,
   HomeIcon,
+  LinkedInIcon,
+  TwitterIcon,
   WritingsIcon,
 } from "@/public/assets/icons";
 
@@ -29,20 +32,26 @@ export default function Sidebar() {
           external
           href="https://github.com"
           name="Github"
-          icon={<AMAIcon />}
+          icon={<GithubIcon />}
         />
         <NavLink
           external
           href="https://linkedin.com"
           name="LinkedIn"
-          icon={<BookmarksIcon />}
+          icon={<LinkedInIcon />}
         />
         <NavLink
           external
           href="https://twitter.com"
           name="Twitter"
-          icon={<BookmarksIcon />}
+          icon={<TwitterIcon />}
         />
+      </div>
+
+      <div className="cta">
+        <div className="separator" />
+
+        <button className="sign_in">Sign in</button>
       </div>
     </div>
   );
