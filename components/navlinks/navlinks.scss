@@ -1,5 +1,21 @@
 .nav_link {
-  display: flex;
-  align-items: center;
-  gap: 2em;
+  margin-top: 3em;
+  a {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    text-decoration: none;
+
+    p {
+      font-size: 1.4em;
+      font-weight: 400;
+      color: $sui-colors-white;
+      font-family: $sui-fonts-heading;
+    }
+
+    svg {
+      width: 1.5em;
+      height: 1.5em;
+    }
+  }
 }
