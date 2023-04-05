@@ -5,4 +5,28 @@
   position: fixed;
   width: 250px;
   padding: $sui-spacing-4;
+
+  h1 {
+    font-size: 1.6rem;
+    font-weight: 500;
+    font-family: $sui-fonts-body;
+    color: $sui-colors-white;
+    margin-top: 0.5em;
+    margin-left: 0.5em;
+  }
+
+  .head_links {
+    margin-top: 4em;
+  }
+  .me {
+    margin-top: 4em;
+    h3 {
+      font-size: 1.4rem;
+      font-weight: 400;
+      color: $sui-colors-white;
+      font-family: $sui-fonts-body;
+      margin-bottom: 1.5em;
+      margin-left: 0.5em;
+    }
+  }
 }

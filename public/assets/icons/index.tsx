@@ -1,15 +1,66 @@
 export const HomeIcon = ({ fill }: { fill?: string }) => {
   return (
     <svg
-      width="14"
-      height="14"
-      viewBox="0 0 14 14"
+      width="20"
+      height="17"
+      viewBox="0 0 20 17"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
-        d="M12.0364 3.21264L8.19542 0.525294C7.14848 -0.208226 5.54141 -0.168216 4.53449 0.611983L1.19364 3.21931C0.526801 3.73944 0 4.80638 0 5.6466V10.2478C0 11.9482 1.38035 13.3352 3.08078 13.3352H10.2693C11.9697 13.3352 13.3501 11.9549 13.3501 10.2544V5.73328C13.3501 4.83306 12.7699 3.72611 12.0364 3.21264ZM7.17516 10.6679C7.17516 10.9413 6.94843 11.168 6.67503 11.168C6.40163 11.168 6.1749 10.9413 6.1749 10.6679V8.66736C6.1749 8.39396 6.40163 8.16724 6.67503 8.16724C6.94843 8.16724 7.17516 8.39396 7.17516 8.66736V10.6679Z"
-        fill={fill ? fill : "#EFEFEF"}
+        d="M8 17V11H12V17H17V9H20L10 0L0 9H3V17H8Z"
+        fill={fill || "#EFEFEF"}
+      />
+    </svg>
+  );
+};
+
+export const WritingsIcon = ({ fill }: { fill?: string }) => {
+  return (
+    <svg
+      width="16"
+      height="20"
+      viewBox="0 0 16 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M10.59 0.59C10.21 0.21 9.7 0 9.17 0H2C0.9 0 0 0.9 0 2V18C0 19.1 0.89 20 1.99 20H14C15.1 20 16 19.1 16 18V6.83C16 6.3 15.79 5.79 15.41 5.42L10.59 0.59ZM11 16H5C4.45 16 4 15.55 4 15C4 14.45 4.45 14 5 14H11C11.55 14 12 14.45 12 15C12 15.55 11.55 16 11 16ZM11 12H5C4.45 12 4 11.55 4 11C4 10.45 4.45 10 5 10H11C11.55 10 12 10.45 12 11C12 11.55 11.55 12 11 12ZM9 6V1.5L14.5 7H10C9.45 7 9 6.55 9 6Z"
+        fill={fill || "#EFEFEF"}
+      />
+    </svg>
+  );
+};
+
+export const BookmarksIcon = ({ fill }: { fill?: string }) => {
+  return (
+    <svg
+      width="14"
+      height="18"
+      viewBox="0 0 14 18"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M12 0H2C0.9 0 0 0.9 0 2V18L7 15L14 18V2C14 0.9 13.1 0 12 0Z"
+        fill={fill || "#EFEFEF"}
+      />
+    </svg>
+  );
+};
+
+export const AMAIcon = ({ fill }: { fill?: string }) => {
+  return (
+    <svg
+      width="20"
+      height="20"
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M18 4H17V12C17 12.55 16.55 13 16 13H4V14C4 15.1 4.9 16 6 16H16L20 20V6C20 4.9 19.1 4 18 4ZM15 9V2C15 0.9 14.1 0 13 0H2C0.9 0 0 0.9 0 2V15L4 11H13C14.1 11 15 10.1 15 9Z"
+        fill={fill || "#EFEFEF"}
       />
     </svg>
   );
