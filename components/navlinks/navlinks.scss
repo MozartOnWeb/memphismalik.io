@@ -1,21 +1,30 @@
 .nav_link {
   margin-top: 3em;
-  a {
-    display: flex;
-    align-items: center;
-    gap: 1em;
-    text-decoration: none;
+  padding: 1.2em 1em;
+  border-radius: 5px;
 
-    p {
-      font-size: 1.4em;
-      font-weight: 400;
-      color: $sui-colors-white;
-      font-family: $sui-fonts-heading;
-    }
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  text-decoration: none;
 
-    svg {
-      width: 1.5em;
-      height: 1.5em;
-    }
+  p {
+    font-size: 1.4em;
+    font-weight: 400;
+    color: $sui-colors-white;
+    font-family: $sui-fonts-body;
+  }
+
+  svg {
+    width: 1.5em;
+    height: 1.5em;
+  }
+
+  &:hover {
+    background-color: $sui-colors-hover;
+  }
+
+  &.active {
+    background-color: $sui-colors-hover;
   }
 }
