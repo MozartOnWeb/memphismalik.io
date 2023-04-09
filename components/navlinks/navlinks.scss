@@ -1,0 +1,41 @@
+.nav_link {
+  margin-top: 0.5em;
+  padding: 1em;
+  border-radius: 5px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-decoration: none;
+
+  div {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+  }
+
+  p {
+    font-size: 1.3em;
+    font-weight: 400;
+    color: $sui-colors-white;
+    font-family: $sui-fonts-body;
+  }
+
+  svg {
+    width: 1.5em;
+    height: 1.5em;
+  }
+
+  .link_arrow {
+    width: 1em;
+    height: 1em;
+  }
+
+  &:hover {
+    background-color: $sui-colors-hover;
+  }
+
+  &.active {
+    background-color: $sui-colors-hover;
+  }
+}
