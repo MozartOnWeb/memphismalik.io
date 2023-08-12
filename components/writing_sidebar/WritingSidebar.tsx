@@ -12,46 +12,10 @@ import {
 
 export default function WritingSidebar() {
   return (
-    <div className="sidebar">
-      <h1>Memphis Malik</h1>
-
-      <div className="head_links">
-        <NavLink href="/" name="Home" icon={<HomeIcon />} />
-        <NavLink href="/writings" name="Writings" icon={<WritingsIcon />} />
-      </div>
-
-      <div className="me">
-        <h3>Me</h3>
-        <NavLink href="/ama" name="AMA" icon={<AMAIcon />} />
-        <NavLink href="/bookmarks" name="Bookmarks" icon={<BookmarksIcon />} />
-      </div>
-
-      <div className="socials">
-        <h3>Online</h3>
-        <NavLink
-          external
-          href="https://github.com"
-          name="Github"
-          icon={<GithubIcon />}
-        />
-        <NavLink
-          external
-          href="https://linkedin.com"
-          name="LinkedIn"
-          icon={<LinkedInIcon />}
-        />
-        <NavLink
-          external
-          href="https://twitter.com"
-          name="Twitter"
-          icon={<TwitterIcon />}
-        />
-      </div>
-
-      <div className="cta">
-        <div className="separator" />
-
-        <button className="sign_in">Sign in</button>
+    <div className="writing_sidebar">
+      <div className="headline">
+        <h2>Writings</h2>
+        <button className="subscribe">Subscribe</button>
       </div>
     </div>
   );
