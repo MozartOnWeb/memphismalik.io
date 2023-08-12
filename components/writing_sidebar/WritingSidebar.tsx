@@ -10,7 +10,7 @@ import {
   WritingsIcon,
 } from "@/public/assets/icons";
 
-export default function Sidebar() {
+export default function WritingSidebar() {
   return (
     <div className="sidebar">
       <h1>Memphis Malik</h1>

@@ -1,10 +1,9 @@
 //import sidebar
-import Sidebar from "@/components/main_sidebar/MainSidebar";
-
+import WritingSidebar from "@/components/writing_sidebar/WritingSidebar";
 export default function Writings() {
   return (
     <main className="writings-page">
-      <Sidebar />
+      <WritingSidebar />
     </main>
   );
 }
