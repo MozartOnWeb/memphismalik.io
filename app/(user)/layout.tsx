@@ -2,7 +2,7 @@
 import "../../sass/index.scss";
 
 // import components
-import Sidebar from "@/components/sidebar/Sidebar";
+import Sidebar from "@/components/main_sidebar/MainSidebar";
 
 //import fonts
 import { Neue_Mechanica, Roboto_Mono } from "@/public/assets/fonts";
