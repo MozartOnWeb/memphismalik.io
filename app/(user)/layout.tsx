@@ -9,10 +9,10 @@ import { Neue_Mechanica, Roboto_Mono } from "@/public/assets/fonts";
 
 export const metadata = {
   title: {
-    default: "Next & Sanity Boilerplate",
-    template: "%s | Next & Sanity Boilerplate",
+    default: "Memphis Malik",
+    template: "%s | Memphis Malik",
   },
-  keywords: ["Next.js", "Sanity.io", "Boilerplate"],
+  keywords: ["Memphis Malik", "Ousmane Maiga", "Ousmane Maïga"],
   robots: {
     index: true,
     follow: true,
