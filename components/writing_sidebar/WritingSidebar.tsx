@@ -17,7 +17,7 @@ export default function WritingSidebar() {
 
       <div className="blog_links_container">
         <BlogLink
-          href="/"
+          href="/writings/1"
           title="Design critique for fund and profit"
           date="February 19, 2023"
         />

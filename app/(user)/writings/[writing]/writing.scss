@@ -1,0 +1,13 @@
+.writing-page {
+  width: calc(100% - 600px);
+  display: flex;
+  margin-left: 600px;
+  justify-content: center;
+  padding-bottom: 5em;
+
+  section {
+    width: 600px;
+    margin-top: 8em;
+    background-color: #fff;
+  }
+}
