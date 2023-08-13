@@ -6,8 +6,55 @@
   padding-bottom: 5em;
 
   section {
-    width: 600px;
+    width: 90%;
     margin-top: 8em;
-    background-color: #fff;
+
+    .title {
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+      h1 {
+        font-size: 2.6rem;
+        font-weight: 500;
+        font-family: $sui-fonts-body;
+        color: $sui-colors-white;
+      }
+      p {
+        font-size: 1.6rem;
+        font-weight: 300;
+        font-family: $sui-fonts-body;
+        color: $sui-colors-white;
+      }
+
+      margin-bottom: 3.5em;
+    }
+
+    .content {
+      width: 100%;
+
+      img {
+        width: 100%;
+        height: auto;
+        border-radius: 20px;
+        margin-bottom: 2.5em;
+      }
+
+      h3 {
+        font-size: 2rem;
+        font-weight: 500;
+        font-family: $sui-fonts-body;
+        color: $sui-colors-white;
+        margin-bottom: 0.5em;
+      }
+
+      blockquote {
+        font-size: 1.6rem;
+        font-weight: 300;
+        line-height: 160%;
+        font-family: $sui-fonts-body;
+        color: $sui-colors-white;
+        margin-bottom: 2em;
+      }
+    }
   }
 }
