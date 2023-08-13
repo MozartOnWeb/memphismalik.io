@@ -8,6 +8,10 @@
   padding: $sui-spacing-4;
   overflow-y: scroll;
 
+  @media screen and (max-width: 1120px) {
+    width: 300px;
+  }
+
   .headline {
     display: flex;
     justify-content: space-between;

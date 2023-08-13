@@ -1,6 +1,6 @@
 //import sidebar
 import WritingSidebar from "@/components/writing_sidebar/WritingSidebar";
-export default function Writings() {
+export default async function Writings() {
   return (
     <main className="writings-page">
       <WritingSidebar />
