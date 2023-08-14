@@ -14,7 +14,9 @@ export const BlogLink = ({ href, title, date }: NavLinkProps) => {
 
   return (
     <Link
-      className={"blog_link" + (pathname === href ? " active" : "")}
+      className={
+        "blog_link" + (pathname === `/writings/${href}` ? " active" : "")
+      }
       href={`/writings/${href}` || "/writings"}
     >
       <h3>{title}</h3>
