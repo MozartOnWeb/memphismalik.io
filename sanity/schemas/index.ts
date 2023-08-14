@@ -1,1 +1,3 @@
-export const schemaTypes = []
+import { Writing } from "./Writing";
+
+export const schemaTypes = [Writing];
