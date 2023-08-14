@@ -7,6 +7,9 @@ import { fetchWritings } from "@/sanity/fetch";
 //import icons
 import { SubscribeIcon } from "@/public/assets/icons";
 
+//import helpers function
+import { formatDate } from "@/lib/helpers";
+
 //define types
 type WritingsProps = {
   title: string;
@@ -31,7 +34,12 @@ export default async function WritingSidebar() {
 
       <div className="blog_links_container">
         {writings.map(({ title, slug, publishedAt }) => (
-          <BlogLink key={slug} href={slug} title={title} date={publishedAt} />
+          <BlogLink
+            key={slug}
+            href={slug}
+            title={title}
+            date={formatDate(publishedAt)}
+          />
         ))}
       </div>
     </div>

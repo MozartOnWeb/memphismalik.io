@@ -5,7 +5,8 @@ import { sanityClient } from "./client";
 export const fetchWritings = async () => {
   return sanityClient.fetch(groq`
         *[_type == "writing" && !(_id in path("drafts.**"))] {
-            name,
+            title,
+            publishedAt,
             "slug": slug.current,
         }
     `);
