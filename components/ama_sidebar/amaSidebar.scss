@@ -1,0 +1,58 @@
+.ama_sidebar {
+  background-color: $sui-colors-sidebar;
+  border-right: 1px solid $sui-colors-sidebar-border;
+  height: 100vh;
+  position: fixed;
+  left: 250px;
+  width: 350px;
+  padding: $sui-spacing-4;
+  overflow-y: scroll;
+
+  @media screen and (max-width: 1120px) {
+    width: 300px;
+  }
+
+  .headline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-left: 0.5em;
+    font-family: $sui-fonts-body;
+    color: $sui-colors-white;
+  }
+
+  .add {
+    width: 50px;
+    background-color: $sui-button-primary;
+    border: none;
+    color: $sui-colors-white;
+    font-size: 1.4rem;
+    font-weight: 400;
+    font-family: $sui-fonts-body;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+
+    svg {
+      width: 1.5em;
+      height: 1.5em;
+    }
+  }
+
+  .ama_links_container {
+    margin-top: 2.2em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2em;
+  }
+}
