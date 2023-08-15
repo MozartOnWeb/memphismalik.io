@@ -1,0 +1,73 @@
+.ama-page {
+  width: calc(100% - 600px);
+  display: flex;
+  margin-left: 600px;
+  justify-content: center;
+  padding-bottom: 5em;
+
+  @media screen and (max-width: 1120px) {
+    width: calc(100% - 550px);
+    margin-left: 550px;
+  }
+
+  section {
+    width: 90%;
+    margin-top: 8em;
+
+    .headline {
+      display: flex;
+      align-items: center;
+      gap: 1em;
+      margin-bottom: 4em;
+    }
+
+    .author {
+      display: flex;
+      align-items: center;
+      gap: 1em;
+    }
+
+    .author_profile {
+      width: 30px;
+      height: 30px;
+      border-radius: 100%;
+      object-fit: cover;
+    }
+
+    .author_name {
+      font-size: 1.6rem;
+      font-weight: 300;
+      font-family: $sui-fonts-body;
+      color: $sui-colors-white;
+    }
+
+    .date {
+      font-size: 1.6rem;
+      font-weight: 300;
+      font-family: $sui-fonts-body;
+      color: $sui-colors-hover;
+    }
+
+    .content {
+      width: 100%;
+
+      h1 {
+        font-size: 2.6rem;
+        font-weight: 500;
+        font-family: $sui-fonts-body;
+        color: $sui-colors-white;
+        line-height: 140%;
+        margin-bottom: 1em;
+      }
+
+      p {
+        font-size: 1.6rem;
+        font-weight: 300;
+        font-family: $sui-fonts-body;
+        color: $sui-colors-hover;
+        line-height: 140%;
+        margin-bottom: 0.5em;
+      }
+    }
+  }
+}

@@ -22,7 +22,7 @@ export default function Sidebar() {
 
       <div className="me">
         <h3>Me</h3>
-        <NavLink href="/ama" name="AMA" icon={<AMAIcon />} />
+        <NavLink href="/amas" name="AMA" icon={<AMAIcon />} />
         <NavLink href="/bookmarks" name="Bookmarks" icon={<BookmarksIcon />} />
       </div>
 
