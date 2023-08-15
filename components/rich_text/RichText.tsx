@@ -62,6 +62,7 @@ export const RichTextComponents: PortableTextComponents = {
         </Link>
       );
     },
+    code: ({ children }: any) => <code className="code">{children}</code>,
   },
   list: {
     bullet: ({ children }) => <ul className="ul">{children}</ul>,
