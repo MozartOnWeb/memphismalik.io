@@ -52,13 +52,14 @@
   padding: 25px;
   font-size: 16px;
   line-height: 140%;
-  border-left: 4px solid $sui-colors-white;
-  background-color: $sui-colors-primary;
+  border-left: 4px solid $sui-colors-primary;
+  background-color: $sui-colors-hover;
   margin: 20px 0;
 }
 
 .link {
   color: $sui-colors-primary;
+  text-decoration: none;
 }
 
 .image {
@@ -78,6 +79,7 @@
   font-family: $sui-fonts-body;
   font-weight: 300;
   font-size: 16px;
+  line-height: 140%;
 
   li {
     margin-bottom: 0.5em;
@@ -93,6 +95,7 @@
   font-family: $sui-fonts-body;
   font-weight: 300;
   font-size: 16px;
+  line-height: 140%;
 
   li {
     margin-bottom: 0.5em;

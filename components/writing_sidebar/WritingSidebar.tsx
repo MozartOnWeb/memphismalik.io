@@ -17,8 +17,6 @@ type WritingsProps = {
   publishedAt: string;
 };
 
-const wait = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
-
 export default async function WritingSidebar() {
   const writings: WritingsProps[] = await fetchWritings();
 
