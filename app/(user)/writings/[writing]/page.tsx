@@ -10,6 +10,7 @@ import { formatDate } from "@/lib/helpers";
 
 //import components
 import CommentsSeparator from "@/components/comments_section/CommentsSeparator";
+import Comments from "@/components/comments_section/Comments";
 
 export default async function Writing({
   params: { writing },
@@ -31,6 +32,7 @@ export default async function Writing({
         </div>
 
         <CommentsSeparator />
+        <Comments />
       </section>
     </main>
   );

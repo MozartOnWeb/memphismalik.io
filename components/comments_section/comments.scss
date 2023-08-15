@@ -1,0 +1,53 @@
+.comments {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  width: 100%;
+
+  .headline {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    margin-bottom: 2em;
+  }
+
+  .author {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+  }
+
+  .author_profile {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    object-fit: cover;
+  }
+
+  .author_name {
+    font-size: 1.6rem;
+    font-weight: 300;
+    font-family: $sui-fonts-body;
+    color: $sui-colors-white;
+  }
+
+  .date {
+    font-size: 1.6rem;
+    font-weight: 300;
+    font-family: $sui-fonts-body;
+    color: $sui-colors-hover;
+  }
+
+  .content {
+    width: 100%;
+
+    p {
+      font-size: 1.6rem;
+      font-weight: 300;
+      font-family: $sui-fonts-body;
+      color: $sui-colors-hover;
+      line-height: 140%;
+      margin-bottom: 0.5em;
+    }
+  }
+}
