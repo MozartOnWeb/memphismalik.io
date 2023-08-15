@@ -9,7 +9,7 @@ import { fetchWriting } from "@/sanity/fetch";
 import { formatDate } from "@/lib/helpers";
 
 //import components
-import CommentsSection from "@/components/comments_section/CommentsSection";
+import CommentsSeparator from "@/components/comments_section/CommentsSeparator";
 
 export default async function Writing({
   params: { writing },
@@ -30,7 +30,7 @@ export default async function Writing({
           <PortableText components={RichTextComponents} value={writings.body} />
         </div>
 
-        <CommentsSection />
+        <CommentsSeparator />
       </section>
     </main>
   );
