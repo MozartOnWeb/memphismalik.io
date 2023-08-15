@@ -1,5 +1,6 @@
 //import PortableText
 import { PortableText } from "@portabletext/react";
+import { RichTextComponents } from "@/components/rich_text/RichText";
 
 //import fetchWriting
 import { fetchWriting } from "@/sanity/fetch";
@@ -23,7 +24,7 @@ export default async function Writing({
         </div>
 
         <div className="content">
-          <PortableText value={writings.body} />
+          <PortableText components={RichTextComponents} value={writings.body} />
         </div>
       </section>
     </main>
