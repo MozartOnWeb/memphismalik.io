@@ -18,8 +18,8 @@ export const AmaLink = ({ href, question, author, profile }: AmaLinkProps) => {
 
   return (
     <Link
-      className={"ama_link" + (pathname === `/ama/${href}` ? " active" : "")}
-      href={`/ama/${href}` || "/ama"}
+      className={"ama_link" + (pathname === `/amas/${href}` ? " active" : "")}
+      href={`/amas/${href}` || "/amas"}
     >
       <h3>{question}</h3>
       <div className="author">
