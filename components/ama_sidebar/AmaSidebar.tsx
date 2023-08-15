@@ -1,5 +1,6 @@
 //import icons
 import { PlusIcon } from "@/public/assets/icons";
+import AmaLink from "../ama_link/AmaLink";
 
 export default async function AmaSidebar() {
   return (
@@ -11,7 +12,13 @@ export default async function AmaSidebar() {
         </button>
       </div>
 
-      <div className="ama_links_container"></div>
+      <div className="ama_links_container">
+        <AmaLink
+          href="/ama"
+          question="Are you considering building a Design course or book?"
+          author="Memphis Malik"
+        />
+      </div>
     </div>
   );
 }

@@ -1,0 +1,46 @@
+.ama_link {
+  margin-top: 0.5em;
+  padding: 1em;
+  border-radius: 5px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.1em;
+  text-decoration: none;
+
+  h3 {
+    font-size: 1.4em;
+    font-weight: 400;
+    color: $sui-colors-white;
+    font-family: $sui-fonts-body;
+    line-height: 140%;
+  }
+
+  .author {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    .author_profile {
+      width: 20px;
+      height: 20px;
+      border-radius: 100%;
+      object-fit: cover;
+    }
+
+    .author_name {
+      font-size: 1.4em;
+      font-weight: 400;
+      color: $sui-colors-gray;
+      font-family: $sui-fonts-body;
+    }
+  }
+
+  &:hover {
+    background-color: $sui-colors-hover;
+  }
+
+  &.active {
+    background-color: $sui-colors-hover;
+  }
+}
