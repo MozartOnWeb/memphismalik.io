@@ -1,0 +1,20 @@
+.comments_section {
+  margin-top: 5em;
+
+  .separator {
+    display: flex;
+    gap: 2em;
+    align-items: center;
+
+    div {
+      height: 1px;
+      width: 100%;
+      background-color: $sui-colors-white;
+    }
+
+    svg {
+      width: 70px;
+      height: 70px;
+    }
+  }
+}

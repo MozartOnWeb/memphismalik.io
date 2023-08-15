@@ -8,6 +8,9 @@ import { fetchWriting } from "@/sanity/fetch";
 //import helpers function
 import { formatDate } from "@/lib/helpers";
 
+//import components
+import CommentsSection from "@/components/comments_section/CommentsSection";
+
 export default async function Writing({
   params: { writing },
 }: {
@@ -26,6 +29,8 @@ export default async function Writing({
         <div className="content">
           <PortableText components={RichTextComponents} value={writings.body} />
         </div>
+
+        <CommentsSection />
       </section>
     </main>
   );
