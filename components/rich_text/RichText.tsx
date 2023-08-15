@@ -1,18 +1,41 @@
 import { PortableTextComponents } from "@portabletext/react";
 
+import urlBuilder from "@sanity/image-url";
+import { getImageDimensions } from "@sanity/asset-utils";
+import Image from "next/image";
+
+import { sanityClient } from "@/sanity/client";
+
+// Barebones lazy-loaded image component
+const SampleImageComponent = ({ value, isInline }: any) => {
+  const { width, height } = getImageDimensions(value);
+  const imageUrl = urlBuilder(sanityClient)
+    .image(value)
+    .width(isInline ? 100 : 800)
+    .fit("max")
+    .auto("format")
+    .url();
+
+  return (
+    <Image
+      width={800}
+      height={800}
+      src={imageUrl}
+      alt={value.alt || " "}
+      loading="lazy"
+      style={{
+        // Display alongside text if image appears inside a block text span
+        display: isInline ? "inline-block" : "block",
+
+        // Avoid jumping around with aspect-ratio CSS property
+        aspectRatio: width / height,
+      }}
+    />
+  );
+};
+
 export const RichTextComponents: PortableTextComponents = {
-  block: {
-    h1: ({ children }) => <h2 className={"h1"}>{children}</h2>,
-    h2: ({ children }) => <h2 className={"h2"}>{children}</h2>,
-    h3: ({ children }) => <h3 className={"h3"}>{children}</h3>,
-    h4: ({ children }) => <h3 className={"h4"}>{children}</h3>,
-    h5: ({ children }) => <h3 className={"h5"}>{children}</h3>,
-    blockquote: ({ children }) => (
-      <blockquote className={"blockquote"}>{children}</blockquote>
-    ),
-    p: ({ children }) => <p className={"p"}>{children}</p>,
-  },
-  marks: {
-    strong: ({ children }) => <span className={""}>{children}</span>,
+  types: {
+    image: SampleImageComponent,
   },
 };
