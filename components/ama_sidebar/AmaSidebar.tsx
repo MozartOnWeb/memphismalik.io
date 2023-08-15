@@ -14,9 +14,19 @@ export default async function AmaSidebar() {
 
       <div className="ama_links_container">
         <AmaLink
-          href="/ama"
+          href="1"
           question="Are you considering building a Design course or book?"
           author="Memphis Malik"
+        />
+        <AmaLink
+          href="2"
+          question="What do you use as a backend for your site? Is it NextJS API routes or a custom server seperate from frontend?"
+          author="Henry Gonzalez"
+        />
+        <AmaLink
+          href="3"
+          question="What is your favorite book?"
+          author="John Doe"
         />
       </div>
     </div>
