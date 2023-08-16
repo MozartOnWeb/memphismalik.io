@@ -1,10 +1,10 @@
 .writing-page {
+  position: relative;
   width: calc(100% - 600px);
   display: flex;
   margin-left: 600px;
   justify-content: center;
   padding-bottom: 5em;
-  position: relative;
 
   @media screen and (max-width: 1120px) {
     width: calc(100% - 550px);
@@ -12,17 +12,21 @@
   }
 
   .header {
-    width: 100%;
+    width: calc(100% - 600px);
     position: fixed;
     top: 0;
-    left: 0;
+    right: 0;
     display: flex;
     justify-content: right;
     padding: 1em 5em;
     border-bottom: 1px solid $sui-colors-hover;
     background-color: rgba(23, 23, 23, 0.3);
     backdrop-filter: blur(10px) brightness(0.89);
-    z-index: -1;
+
+    @media screen and (max-width: 1120px) {
+      width: calc(100% - 550px);
+      margin-left: 550px;
+    }
 
     .like_button {
       cursor: pointer;
@@ -52,7 +56,6 @@
   section {
     width: 90%;
     margin-top: 8em;
-    z-index: -2;
 
     .title {
       display: flex;

@@ -1,25 +1,10 @@
-//import components
-import BlogLink from "../blog_link/BlogLink";
-
-//import fetch writings
-import { fetchWritings } from "@/sanity/fetch";
+import { Suspense } from "react";
 
 //import icons
 import { SubscribeIcon } from "@/public/assets/icons";
-
-//import helpers function
-import { formatDate } from "@/lib/helpers";
-
-//define types
-type WritingsProps = {
-  title: string;
-  slug: string;
-  publishedAt: string;
-};
+import { WritingLinks } from "../suspense/WritingLinks";
 
 export default async function WritingSidebar() {
-  const writings: WritingsProps[] = await fetchWritings();
-
   return (
     <div className="writing_sidebar">
       <div className="headline">
@@ -29,17 +14,9 @@ export default async function WritingSidebar() {
           Subscribe
         </button>
       </div>
-
-      <div className="blog_links_container">
-        {writings.map(({ title, slug, publishedAt }) => (
-          <BlogLink
-            key={slug}
-            href={slug}
-            title={title}
-            date={formatDate(publishedAt)}
-          />
-        ))}
-      </div>
+      <Suspense>
+        <WritingLinks />
+      </Suspense>
     </div>
   );
 }
