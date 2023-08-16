@@ -4,10 +4,41 @@
   margin-left: 600px;
   justify-content: center;
   padding-bottom: 5em;
+  position: relative;
 
   @media screen and (max-width: 1120px) {
     width: calc(100% - 550px);
     margin-left: 550px;
+  }
+
+  .header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: right;
+    padding: 2em;
+    border-bottom: 1px solid $sui-colors-hover;
+    z-index: -1;
+
+    .like_button {
+      width: 80px;
+      background-color: $sui-button-primary;
+      border: none;
+      color: $sui-colors-white;
+      font-size: 1.4rem;
+      font-weight: 400;
+      font-family: $sui-fonts-body;
+      padding: 8px;
+      border-radius: 5px;
+      cursor: pointer;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5em;
+    }
   }
 
   section {

@@ -12,6 +12,9 @@ import { formatDate } from "@/lib/helpers";
 import CommentsSeparator from "@/components/comments_section/CommentsSeparator";
 import Comments from "@/components/comments_section/Comments";
 
+//import like icon
+import { LikeIcon } from "@/public/assets/icons";
+
 export default async function Writing({
   params: { writing },
 }: {
@@ -21,6 +24,12 @@ export default async function Writing({
 
   return (
     <main className="writing-page">
+      <div className="header">
+        <div className="like_button">
+          <LikeIcon />
+          26
+        </div>
+      </div>
       <section>
         <div className="title">
           <h1>{writings.title}</h1>
