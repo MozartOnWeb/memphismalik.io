@@ -6,6 +6,9 @@ import { Suspense } from "react";
 import { SubscribeIcon } from "@/public/assets/icons";
 import { WritingLinks } from "../suspense/WritingLinks";
 
+//import components
+import Loading from "../loading/Loading";
+
 export default function WritingSidebar() {
   return (
     <div className="writing_sidebar">
@@ -16,7 +19,7 @@ export default function WritingSidebar() {
           Subscribe
         </button>
       </div>
-      <Suspense fallback={<p>Loading...</p>}>
+      <Suspense fallback={<Loading />}>
         <WritingLinks />
       </Suspense>
     </div>

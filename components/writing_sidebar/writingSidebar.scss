@@ -3,6 +3,8 @@
   border-right: 1px solid $sui-colors-sidebar-border;
   height: 100vh;
   position: fixed;
+  display: flex;
+  flex-direction: column;
   left: 250px;
   width: 350px;
   padding: $sui-spacing-4;
