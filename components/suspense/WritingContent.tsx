@@ -21,7 +21,7 @@ export default async function WritingContent({ writing }: { writing: string }) {
     <>
       <div className="header">
         <div className="like_button">
-          <LikeIcon />
+          <LikeIcon size={16} />
           26
         </div>
       </div>

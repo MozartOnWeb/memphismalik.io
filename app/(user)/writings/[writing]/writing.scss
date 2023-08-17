@@ -46,32 +46,32 @@
       justify-content: center;
       gap: 0.5em;
 
-      svg {
-        width: 20px;
-        height: 20px;
+      svg path {
+        stroke: $sui-colors-hover;
       }
     }
   }
 
   section {
     width: 90%;
-    margin-top: 8em;
+    margin-top: 12em;
 
     .title {
       display: flex;
       flex-direction: column;
       gap: 1em;
       h1 {
-        font-size: 2.6rem;
+        font-size: 2.8rem;
+        line-height: 140%;
         font-weight: 500;
         font-family: $sui-fonts-body;
         color: $sui-colors-white;
       }
       p {
-        font-size: 1.6rem;
+        font-size: 1.8rem;
         font-weight: 300;
         font-family: $sui-fonts-body;
-        color: $sui-colors-white;
+        color: $sui-colors-gray;
       }
 
       margin-bottom: 3.5em;
