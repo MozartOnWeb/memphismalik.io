@@ -1,5 +1,3 @@
-"use client";
-
 import { Suspense } from "react";
 
 //import icons
@@ -9,7 +7,7 @@ import { WritingLinks } from "../suspense/WritingLinks";
 //import components
 import Loading from "../loading/Loading";
 
-export default function WritingSidebar() {
+export default async function WritingSidebar() {
   return (
     <div className="writing_sidebar">
       <div className="headline">
@@ -19,7 +17,7 @@ export default function WritingSidebar() {
           Subscribe
         </button>
       </div>
-      <Suspense fallback={<Loading />}>
+      <Suspense fallback={<Loading marginTop={20} />}>
         <WritingLinks />
       </Suspense>
     </div>

@@ -4,9 +4,11 @@ interface Styles {
   [key: string]: React.CSSProperties;
 }
 
-export default function Loading() {
+export default function Loading({ marginTop }: { marginTop: number }) {
+  const dynamicStyle = { marginTop: marginTop };
+
   return (
-    <div style={styles.loader} title="0">
+    <div style={{ ...styles.loader, ...dynamicStyle }} title="0">
       <svg
         version="1.1"
         id="loader-1"
@@ -47,7 +49,6 @@ export default function Loading() {
 
 const styles: Styles = {
   loader: {
-    marginTop: "20px",
     marginLeft: "auto",
     marginRight: "auto",
     justifySelf: "center",
