@@ -16,7 +16,7 @@ export default function WritingSidebar() {
           Subscribe
         </button>
       </div>
-      <Suspense>
+      <Suspense fallback={<p>Loading...</p>}>
         <WritingLinks />
       </Suspense>
     </div>
