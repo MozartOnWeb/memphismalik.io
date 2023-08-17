@@ -1,10 +1,12 @@
+"use client";
+
 import { Suspense } from "react";
 
 //import icons
 import { SubscribeIcon } from "@/public/assets/icons";
 import { WritingLinks } from "../suspense/WritingLinks";
 
-export default async function WritingSidebar() {
+export default function WritingSidebar() {
   return (
     <div className="writing_sidebar">
       <div className="headline">
