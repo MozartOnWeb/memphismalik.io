@@ -11,6 +11,11 @@
     margin-left: 550px;
   }
 
+  @media screen and (max-width: 1024px) {
+    width: 100%;
+    margin-left: 0px;
+  }
+
   .header {
     width: calc(100% - 600px);
     position: fixed;
@@ -18,14 +23,28 @@
     right: 0;
     display: flex;
     justify-content: right;
+    align-items: center;
     padding: 1em 5em;
     border-bottom: 1px solid $sui-colors-hover;
     background-color: rgba(23, 23, 23, 0.3);
     backdrop-filter: blur(10px) brightness(0.89);
 
+    .lucide-arrow-left {
+      display: none;
+    }
+
     @media screen and (max-width: 1120px) {
       width: calc(100% - 550px);
       margin-left: 550px;
+    }
+
+    @media screen and (max-width: 1024px) {
+      width: 100%;
+      justify-content: space-between;
+      .lucide-arrow-left {
+        display: block;
+        cursor: pointer;
+      }
     }
 
     .like_button {

@@ -16,7 +16,7 @@ export default function Loading({ marginTop }: { marginTop: number }) {
         x="0px"
         y="0px"
         viewBox="0 0 40 40"
-        enable-background="new 0 0 40 40"
+        enableBackground="new 0 0 40 40"
       >
         <path
           style={styles.path}

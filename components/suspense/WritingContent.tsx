@@ -10,7 +10,7 @@ import CommentsSeparator from "@/components/comments_section/CommentsSeparator";
 import Comments from "@/components/comments_section/Comments";
 
 //import like icon
-import { LikeIcon } from "@/public/assets/icons";
+import { LikeIcon, LeftArrowIcon } from "@/public/assets/icons";
 
 //import fetchWriting
 import { fetchWriting } from "@/sanity/fetch";
@@ -20,6 +20,7 @@ export default async function WritingContent({ writing }: { writing: string }) {
   return (
     <>
       <div className="header">
+        <LeftArrowIcon />
         <div className="like_button">
           <LikeIcon size={16} />
           26
