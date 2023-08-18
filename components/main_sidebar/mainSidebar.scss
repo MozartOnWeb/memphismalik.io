@@ -6,6 +6,10 @@
   width: 250px;
   padding: $sui-spacing-4;
 
+  @media screen and (max-width: 1024px) {
+    display: none;
+  }
+
   h1 {
     font-size: 1.4rem;
     font-weight: 500;
