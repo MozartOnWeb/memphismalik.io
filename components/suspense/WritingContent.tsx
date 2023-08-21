@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 //import PortableText
 import { PortableText } from "@portabletext/react";
 import { RichTextComponents } from "@/components/rich_text/RichText";
@@ -20,7 +22,9 @@ export default async function WritingContent({ writing }: { writing: string }) {
   return (
     <>
       <div className="header">
-        <LeftArrowIcon />
+        <Link href={"/writings"}>
+          <LeftArrowIcon />
+        </Link>
         <div className="like_button">
           <LikeIcon size={16} />
           26
