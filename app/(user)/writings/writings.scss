@@ -18,10 +18,15 @@
   }
 
   .headline {
-    display: flex;
     justify-content: space-between;
     align-items: center;
     display: none;
+
+    div {
+      display: flex;
+      align-items: center;
+      gap: 2em;
+    }
     @media screen and (max-width: 1024px) {
       display: flex;
     }

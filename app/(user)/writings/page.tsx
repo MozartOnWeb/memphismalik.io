@@ -11,6 +11,7 @@ import Cubes from "@/public/assets/Cubes.png";
 import { SubscribeIcon } from "@/public/assets/icons";
 import { Suspense } from "react";
 import Loading from "@/components/loading/Loading";
+import Hamburger from "@/components/hamburger_menu/Hamburger";
 
 export default async function Writings() {
   const pathname = usePathname();
@@ -36,7 +37,10 @@ export default async function Writings() {
       {pathname === "/writings" ? (
         <div className="links">
           <div className="headline">
-            <h2>Writings</h2>
+            <div>
+              <Hamburger />
+              <h2>Writings</h2>
+            </div>
             <button className="subscribe">
               <SubscribeIcon />
               Subscribe
