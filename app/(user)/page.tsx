@@ -1,5 +1,8 @@
 import Image from "next/image";
 
+//import components
+import Hamburger from "@/components/hamburger_menu/Hamburger";
+
 //import icons
 import { LocationIcon } from "@/public/assets/icons";
 
@@ -8,6 +11,9 @@ import Location from "@/public/assets/location.png";
 export default function Home() {
   return (
     <main className="home-page">
+      <div className="header">
+        <Hamburger />
+      </div>
       <section>
         <blockquote>
           Je suis un développeur front-end junior passionné par les nouvelles

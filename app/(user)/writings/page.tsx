@@ -16,6 +16,7 @@ export default async function Writings() {
           objectPosition: "center",
           zIndex: -1,
           opacity: 0.5,
+          pointerEvents: "none",
         }}
         src={Cubes}
         alt="background"
