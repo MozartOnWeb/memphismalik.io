@@ -1,8 +1,19 @@
+"use client";
+
+import { usePathname } from "next/navigation";
 import Image from "next/image";
 
+//import components
+import { WritingLinks } from "@/components/suspense/WritingLinks";
+
+//import assets
 import Cubes from "@/public/assets/Cubes.png";
+import { SubscribeIcon } from "@/public/assets/icons";
+import { Suspense } from "react";
+import Loading from "@/components/loading/Loading";
 
 export default async function Writings() {
+  const pathname = usePathname();
   return (
     <main className="writings-page">
       <Image
@@ -22,6 +33,21 @@ export default async function Writings() {
         src={Cubes}
         alt="background"
       />
+      {pathname === "/writings" ? (
+        <div className="links">
+          <div className="headline">
+            <h2>Writings</h2>
+            <button className="subscribe">
+              <SubscribeIcon />
+              Subscribe
+            </button>
+          </div>
+
+          <Suspense fallback={<Loading marginTop={20} />}>
+            <WritingLinks />
+          </Suspense>
+        </div>
+      ) : null}
     </main>
   );
 }
