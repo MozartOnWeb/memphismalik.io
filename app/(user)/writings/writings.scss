@@ -1,0 +1,7 @@
+.writings-page {
+  .writings-background {
+    @media screen and (max-width: 1024px) {
+      display: none;
+    }
+  }
+}

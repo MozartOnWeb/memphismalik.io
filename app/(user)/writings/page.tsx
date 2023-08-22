@@ -6,6 +6,7 @@ export default async function Writings() {
   return (
     <main className="writings-page">
       <Image
+        className="writings-background"
         style={{
           position: "absolute",
           top: 0,
