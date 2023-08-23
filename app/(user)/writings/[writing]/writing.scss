@@ -5,6 +5,7 @@
   margin-left: 600px;
   justify-content: center;
   padding-bottom: 5em;
+  background-color: $sui-colors-background;
 
   @media screen and (max-width: 1120px) {
     width: calc(100% - 550px);
@@ -14,6 +15,10 @@
   @media screen and (max-width: 1024px) {
     width: 100%;
     margin-left: 0px;
+    min-height: 100vh;
+    height: 100%;
+    position: fixed;
+    overflow: scroll;
   }
 
   .header {

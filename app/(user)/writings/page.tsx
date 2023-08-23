@@ -1,5 +1,3 @@
-"use client";
-
 import { usePathname } from "next/navigation";
 import Image from "next/image";
 
@@ -13,8 +11,8 @@ import { Suspense } from "react";
 import Loading from "@/components/loading/Loading";
 import Hamburger from "@/components/hamburger_menu/Hamburger";
 
-export default async function Writings() {
-  const pathname = usePathname();
+export default function Writings() {
+  // const pathname = usePathname();
   return (
     <main className="writings-page">
       <Image
@@ -34,7 +32,7 @@ export default async function Writings() {
         src={Cubes}
         alt="background"
       />
-      {pathname === "/writings" ? (
+      {/* {pathname === "/writings" ? (
         <div className="links">
           <div className="headline">
             <div>
@@ -51,7 +49,7 @@ export default async function Writings() {
             <WritingLinks />
           </Suspense>
         </div>
-      ) : null}
+      ) : null} */}
     </main>
   );
 }

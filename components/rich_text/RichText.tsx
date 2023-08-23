@@ -27,7 +27,7 @@ const SampleImageComponent = ({ value, isInline }: any) => {
       loading="lazy"
       style={{
         // Display alongside text if image appears inside a block text span
-        display: isInline ? "inline-block" : "block",
+        display: "block",
 
         // Avoid jumping around with aspect-ratio CSS property
         aspectRatio: width / height,
