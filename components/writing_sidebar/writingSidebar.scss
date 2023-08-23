@@ -24,6 +24,16 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    div {
+      display: none;
+
+      @media screen and (max-width: 1024px) {
+        display: flex;
+        align-items: center;
+        gap: 2em;
+      }
+    }
   }
 
   h2 {
