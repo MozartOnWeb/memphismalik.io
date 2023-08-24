@@ -10,7 +10,6 @@ export default async function WritingsLayout({
 }) {
   return (
     <section>
-      {/* {pathname.length > 9 ? null : <WritingSidebar />} */}
       <WritingSidebar />
       {children}
     </section>
