@@ -1,5 +1,3 @@
-import { usePathname, useParams } from "next/navigation";
-
 //import sidebar
 import WritingSidebar from "@/components/writing_sidebar/WritingSidebar";
 
@@ -9,7 +7,7 @@ export default async function WritingsLayout({
   children: React.ReactNode;
 }) {
   return (
-    <section>
+    <section className="writings-layout">
       <WritingSidebar />
       {children}
     </section>
