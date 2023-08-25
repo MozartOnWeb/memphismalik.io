@@ -6,8 +6,12 @@
   padding-bottom: 5em;
 
   @media screen and (max-width: 1024px) {
+    position: fixed;
     width: 100%;
     margin-left: 0px;
+    height: 100%;
+    overflow: scroll;
+    margin-bottom: 22em;
   }
 
   .header {
