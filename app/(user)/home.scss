@@ -111,6 +111,7 @@
         font-weight: 300;
         font-family: $sui-fonts-body;
         color: $sui-colors-white;
+        line-height: 140%;
       }
 
       span {
@@ -177,6 +178,7 @@
           font-weight: 300;
           font-family: $sui-fonts-body;
           color: $sui-colors-hover;
+          line-height: 140%;
         }
       }
     }
@@ -188,6 +190,11 @@
     align-items: flex-start;
     grid-template-columns: auto 1fr;
     margin-top: 6em;
+
+    @media screen and (max-width: 1024px) {
+      padding-bottom: 10em;
+    }
+
     @media screen and (max-width: 768px) {
       display: flex;
       flex-direction: column;
@@ -227,6 +234,7 @@
         font-weight: 300;
         font-family: $sui-fonts-body;
         color: $sui-colors-white;
+        line-height: 140%;
       }
 
       span {
