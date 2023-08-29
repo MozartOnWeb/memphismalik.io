@@ -1,5 +1,6 @@
 "use client";
 
+//Hamburger function
 export default function Hamburger() {
   return (
     <div style={{ cursor: "pointer" }}>
