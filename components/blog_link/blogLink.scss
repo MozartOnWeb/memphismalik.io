@@ -30,4 +30,10 @@
   &.active {
     background-color: $sui-colors-hover;
   }
+
+  @media screen and (max-width: 612px) {
+    &:hover {
+      background-color: transparent;
+    }
+  }
 }

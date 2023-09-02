@@ -46,9 +46,15 @@
   }
 
   .cta {
-    width: 100%;
-    position: sticky;
-    margin-top: 30em;
+    width: 90%;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    @media screen and (max-width: 672px) {
+      bottom: 10%;
+    }
 
     .separator {
       margin-top: 2em;
@@ -59,7 +65,7 @@
     .sign_in {
       width: 100%;
       background-color: $sui-button-primary;
-      border: 1px solid $sui-colors-primary;
+      border: 1px solid $sui-colors-hover;
       color: $sui-colors-white;
       font-size: 1.4rem;
       font-weight: 400;
