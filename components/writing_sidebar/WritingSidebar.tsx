@@ -2,7 +2,7 @@ import { Suspense } from "react";
 
 //import icons
 import { SubscribeIcon } from "@/public/assets/icons";
-import { WritingLinks } from "../suspense/WritingLinks";
+import { WritingLinks } from "../suspense/writing/WritingLinks";
 
 //import components
 import Loading from "../loading/Loading";

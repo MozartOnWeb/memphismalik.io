@@ -1,5 +1,5 @@
 //import components
-import BlogLink from "../blog_link/BlogLink";
+import BlogLink from "../../blog_link/BlogLink";
 
 //import helpers function
 import { formatDate } from "@/lib/helpers";

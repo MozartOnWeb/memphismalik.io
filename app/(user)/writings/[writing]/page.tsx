@@ -1,6 +1,6 @@
 import { Suspense } from "react";
 
-import WritingContent from "@/components/suspense/WritingContent";
+import WritingContent from "@/components/suspense/writing/WritingContent";
 import Loading from "@/components/loading/Loading";
 
 export default async function Writing({
