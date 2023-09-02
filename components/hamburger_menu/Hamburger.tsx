@@ -1,9 +1,12 @@
 "use client";
 
+import { useHamburgerModal } from "@/hooks/useHamburgerModal";
+
 //Hamburger function
 export default function Hamburger() {
+  const { setOpen } = useHamburgerModal();
   return (
-    <div style={{ cursor: "pointer" }}>
+    <div onClick={() => setOpen("open")} style={{ cursor: "pointer" }}>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="20"

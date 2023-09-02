@@ -8,6 +8,8 @@ import HamburgerModal from "@/components/hamburger_menu/HamburgerModal";
 //import fonts
 import { Neue_Mechanica, Roboto_Mono } from "@/public/assets/fonts";
 
+import { AnimatePresence } from "framer-motion";
+
 export const metadata = {
   title: {
     default: "Memphis Malik",

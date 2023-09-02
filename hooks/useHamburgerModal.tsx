@@ -2,10 +2,12 @@ import { create } from "zustand";
 
 type ModalProps = {
   state: "open" | "close";
-  setState: (state: "open" | "close") => void;
+  setOpen: (state: "open") => void;
+  setClose: (state: "close") => void;
 };
 
 export const useHamburgerModal = create<ModalProps>((set) => ({
   state: "close",
-  setState: (state) => set({ state: state === "open" ? "close" : "open" }),
+  setOpen: (state) => set({ state: "open" }),
+  setClose: (state) => set({ state: "close" }),
 }));

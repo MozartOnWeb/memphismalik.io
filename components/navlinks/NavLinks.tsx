@@ -10,9 +10,16 @@ type NavLinkProps = {
   name?: string;
   icon?: JSX.Element;
   external?: boolean;
+  onClick?: () => void;
 };
 
-export const NavLink = ({ href, name, icon, external }: NavLinkProps) => {
+export const NavLink = ({
+  href,
+  name,
+  icon,
+  external,
+  onClick,
+}: NavLinkProps) => {
   let pathname = usePathname() || "/";
 
   return (
@@ -20,6 +27,7 @@ export const NavLink = ({ href, name, icon, external }: NavLinkProps) => {
       className={"nav_link " + (pathname === href ? " active" : "")}
       href={href || "/"}
       target={external ? "_blank" : "_self"}
+      onClick={onClick}
     >
       <div>
         {icon}

@@ -1,0 +1,90 @@
+.hamburger_modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 99;
+  background-color: $sui-colors-sidebar;
+  padding: $sui-spacing-4;
+  display: block;
+
+  &.closed {
+    display: none;
+  }
+
+  @media screen and (min-width: 1025px) {
+    display: none;
+  }
+
+  .hamburger_modal_head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h1 {
+      font-size: 1.4rem;
+      font-weight: 500;
+      font-family: $sui-fonts-body;
+      color: $sui-colors-white;
+      margin-top: 1em;
+      margin-left: 0.5em;
+    }
+
+    svg {
+      cursor: pointer;
+    }
+  }
+
+  .head_links {
+    margin-top: 4em;
+  }
+
+  .me {
+    margin-top: 4em;
+    h3 {
+      font-size: 1.4rem;
+      font-weight: 400;
+      color: $sui-colors-gray;
+      font-family: $sui-fonts-body;
+      margin-bottom: 1em;
+      margin-left: 0.5em;
+    }
+  }
+  .socials {
+    margin-top: 4em;
+    h3 {
+      font-size: 1.4rem;
+      font-weight: 400;
+      color: $sui-colors-gray;
+      font-family: $sui-fonts-body;
+      margin-bottom: 1em;
+      margin-left: 0.5em;
+    }
+  }
+
+  .cta {
+    width: 100%;
+    position: sticky;
+    margin-top: 30em;
+
+    .separator {
+      margin-top: 2em;
+      margin-bottom: 2em;
+      border-bottom: 1px solid $sui-colors-sidebar-border;
+    }
+
+    .sign_in {
+      width: 100%;
+      background-color: $sui-button-primary;
+      border: 1px solid $sui-colors-primary;
+      color: $sui-colors-white;
+      font-size: 1.4rem;
+      font-weight: 400;
+      font-family: $sui-fonts-body;
+      padding: 12px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  }
+}
