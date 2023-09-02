@@ -1,5 +1,7 @@
 "use client";
 
+import { useHamburgerModal } from "@/hooks/useHamburgerModal";
+
 import {
   AMAIcon,
   BookmarksIcon,
@@ -13,8 +15,14 @@ import {
 import { NavLink } from "../navlinks/NavLinks";
 
 export default function HamburgerModal() {
+  const { state, setState } = useHamburgerModal();
+
   return (
-    <div className="humburger-modal">
+    <div
+      className={`${
+        state === "open" ? "hamburger_modal" : "hamburger_modal closed"
+      }`}
+    >
       <h1>Memphis Malik</h1>
 
       <div className="head_links">
