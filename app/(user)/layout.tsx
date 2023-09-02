@@ -4,6 +4,7 @@ import "../../sass/index.scss";
 // import components
 import Sidebar from "@/components/main_sidebar/MainSidebar";
 import HamburgerModal from "@/components/hamburger_menu/HamburgerModal";
+import HamburgerMain from "@/components/hamburger_menu/Main";
 
 //import fonts
 import { Neue_Mechanica, Roboto_Mono } from "@/public/assets/fonts";
@@ -46,7 +47,7 @@ export default function RootLayout({
       <body
         className={`${Neue_Mechanica.variable} ${Roboto_Mono.variable} main-layout`}
       >
-        <HamburgerModal />
+        <HamburgerMain />
         <Sidebar />
         {children}
       </body>

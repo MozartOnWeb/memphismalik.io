@@ -10,9 +10,9 @@
   padding: $sui-spacing-4;
   display: block;
 
-  &.closed {
-    display: none;
-  }
+  //   &.closed {
+  //     display: none;
+  //   }
 
   @media screen and (min-width: 1025px) {
     display: none;
