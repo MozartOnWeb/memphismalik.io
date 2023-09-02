@@ -20,11 +20,45 @@
     overflow: scroll;
   }
 
+  .header {
+    width: calc(100% - 600px);
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding: 1em 2em;
+    border-bottom: 1px solid $sui-colors-hover;
+    background-color: rgba(23, 23, 23, 0.3);
+    backdrop-filter: blur(10px) brightness(0.89);
+    z-index: 2;
+
+    .lucide-arrow-left {
+      display: none;
+    }
+
+    @media screen and (max-width: 1120px) {
+      width: calc(100% - 550px);
+      margin-left: 550px;
+    }
+
+    @media screen and (max-width: 1024px) {
+      width: 100%;
+      justify-content: space-between;
+      .lucide-arrow-left {
+        display: block;
+        cursor: pointer;
+        margin-top: 5px;
+      }
+    }
+  }
+
   section {
     width: 90%;
     margin-top: 8em;
 
-    .headline {
+    .ama_headline {
       display: flex;
       align-items: center;
       gap: 1em;
