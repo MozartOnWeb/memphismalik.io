@@ -1,12 +1,16 @@
 //import icons
 import { PlusIcon } from "@/public/assets/icons";
 import AmaLink from "../ama_link/AmaLink";
+import Hamburger from "../hamburger_menu/Hamburger";
 
 export default async function AmaSidebar() {
   return (
     <div className="ama_sidebar">
       <div className="headline">
-        <h2>Ask me anything</h2>
+        <div>
+          <Hamburger />
+          <h2>Ask me anything</h2>
+        </div>
         <button className="add">
           <PlusIcon />
         </button>

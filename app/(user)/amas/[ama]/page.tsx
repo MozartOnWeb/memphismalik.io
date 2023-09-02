@@ -2,7 +2,11 @@ import Image from "next/image";
 
 import Profile from "@/public/assets/profile.jpg";
 
-export default async function Ama() {
+export default async function Ama({
+  params: { ama },
+}: {
+  params: { ama: string };
+}) {
   return (
     <main className="ama-page">
       <section>

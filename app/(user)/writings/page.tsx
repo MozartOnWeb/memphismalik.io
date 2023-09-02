@@ -1,15 +1,7 @@
-import { usePathname } from "next/navigation";
 import Image from "next/image";
-
-//import components
-import { WritingLinks } from "@/components/suspense/WritingLinks";
 
 //import assets
 import Cubes from "@/public/assets/Cubes.png";
-import { SubscribeIcon } from "@/public/assets/icons";
-import { Suspense } from "react";
-import Loading from "@/components/loading/Loading";
-import Hamburger from "@/components/hamburger_menu/Hamburger";
 
 export default function Writings() {
   // const pathname = usePathname();
@@ -32,24 +24,6 @@ export default function Writings() {
         src={Cubes}
         alt="background"
       />
-      {/* {pathname === "/writings" ? (
-        <div className="links">
-          <div className="headline">
-            <div>
-              <Hamburger />
-              <h2>Writings</h2>
-            </div>
-            <button className="subscribe">
-              <SubscribeIcon />
-              Subscribe
-            </button>
-          </div>
-
-          <Suspense fallback={<Loading marginTop={20} />}>
-            <WritingLinks />
-          </Suspense>
-        </div>
-      ) : null} */}
     </main>
   );
 }
